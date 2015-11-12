@@ -20,12 +20,25 @@ class ParametersController < ApplicationController
     end
   end
 
+  def number_input
+  end
+
   def segment
     
   end
 
   def accounts
   end
+
+  def form_display
+  end
+
+  def form_result
+    @message = params[:message]
+    puts @message
+  end
+
+
 
 
 end

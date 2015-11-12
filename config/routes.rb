@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
   get '/', to: 'parameters#index'
-  get '/number_game/:number', to: 'parameters#number_game'
+  post '/number_game', to: 'parameters#number_game'
+  get '/number_input', to: 'parameters#number_input'
   get '/segment/:green_tiger', to: 'parameters#segment'
   get '/accounts/:id', to: 'parameters#accounts'
+  get '/form_display', to: 'parameters#form_display'
+  post '/form_result', to: 'parameters#form_result'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
